@@ -1,0 +1,12 @@
+applications:
+- path: .
+  memory: 512M
+  instances: 1
+  domain: mybluemix.net
+  name: AIS-Node-RED
+  host: AIS-Node-RED
+  disk_quota: 1024M
+  services:
+  - AIS-Conversation
+  - AIS-Node-RED-cloudantNoSQLDB
+  - Twilio-h1
